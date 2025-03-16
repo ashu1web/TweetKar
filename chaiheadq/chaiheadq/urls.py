@@ -6,7 +6,7 @@ from django.contrib.auth.urls import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # Django Admin Panel
-    path('/', include('tweet.urls')),# Include tweet app URLs
+    path('', include('tweet.urls')),# Include tweet app URLs
     path('accounts/', include('django.contrib.auth.urls')),
     
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
